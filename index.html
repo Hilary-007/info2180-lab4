@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers Character Search</title>
     <link rel="stylesheet" href="styles.css">
@@ -11,11 +12,16 @@
     </header>
     <main>
         <section class="search-section">
-            <input type="text" id="searchInput" placeholder="Search for an Avenger...">
-            <button id="searchButton">Search</button>
+            <label for="searchInput">Search by Full name or Alias:</label>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="eg. Iron Man, Tony Stark">
+                <button id="searchButton">Search</button>
+            </div>
         </section>
-        <section class="results-section" id="resultsSection">
-            <!-- Search results will be displayed here -->
+        <section class="result-section" id="resultSection">
+            <h2>Search Result:</h2>
+            <hr>
+            <div id="result"></div>
         </section>
     </main>
     <script src="app.js"></script>
